@@ -19,3 +19,8 @@ On the root folder ``\`` a file called ``README`` describes the necessary folder
 The tool ``GLITCH`` and its dependency ``puppetparser`` are already installed in the docker image. 
 The folder ``RESULTS`` contains the file ``README.md`` with instructions to replicate the experiments of the paper "GLITCH: Automated Polyglot Security Smell Detection in Infrastructure as Code".
 This folder also contains the datasets and the final outputs of our experiments.
+
+To test GLITCH run:
+``
+python3 -m glitch --tech puppet /RESULTS/puppet/repos/github/camptocamp@puppet-python/manifests/pip.pp
+``
