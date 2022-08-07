@@ -112,3 +112,68 @@ python3 calculate-metrics.py SLAC-chef-oracle.csv
 python3 calculate-metrics.py GLITCH-SLAC-chef-oracle.csv
 python3 calculate-metrics.py GLITCH-chef-oracle.csv
 ```
+
+#### IaC Dataset
+
+To obtain the results of occurrences, smell density and proportion of scripts for the Chef IaC dataset (Table 10, 11 and 12), run the following commands (**NOTE:** the execution took ~1400 minutes in our experiments):
+
+```
+cd /RESULTS/chef/iac-dataset-analysis
+./results.sh
+```
+
+
+The output obtained by running SLAC and GLITCH on the IaC dataset is already provided on the folder `chef/iac-dataset-analysis`. If you only want to check the final results run the following commands:
+
+```
+cd /RESULTS/chef/iac-dataset-analysis
+python3 ../../dump-dataset-stats.py --tool slac-chef ../repos SLAC-chef.csv .rb
+python3 ../../dump-dataset-stats.py --tool glitch ../repos GLITCH-chef.csv .rb
+```
+
+### Puppet
+
+#### Oracle Dataset
+
+To obtain the results of precision and recall for the Puppet oracle dataset (Table 9), run the following commands:
+
+```
+cd /RESULTS/puppet/oracle-dataset-analysis
+./oracle-results.sh
+```
+
+The output obtained by running SLIC and both configurations of GLITCH on the oracle dataset is already provided on the folder `puppet/oracle-dataset-analysis`. If you only want to check the final results run the following commands:
+
+```
+cd /RESULTS/puppet/oracle-dataset-analysis
+python3 calculate-metrics.py SLIC-puppet-oracle.csv
+python3 calculate-metrics.py GLITCH-SLIC-puppet-oracle.csv
+python3 calculate-metrics.py GLITCH-puppet-oracle.csv
+```
+
+#### IaC Dataset
+
+To obtain the results of occurrences, smell density and proportion of scripts for the Puppet IaC dataset (Table 10, 11 and 12), run the following commands (**NOTE:** in our experiments the execution took ~45 minutes for Github, ~6 minutes for Mozilla, ~16 minutes for Openstack, and ~15 minutes for Wikimedia):
+
+```
+cd /RESULTS/chef/iac-dataset-analysis
+./github_results.sh
+./mozi_results.sh
+./openstack_results.sh
+./wikimedia_results.sh
+```
+
+
+The output obtained by running SLIC and GLITCH on the IaC dataset is already provided on the folder `puppet/iac-dataset-analysis`. If you only want to check the final results run the following commands:
+
+```
+cd /RESULTS/puppet/iac-dataset-analysis
+python3 ../../dump-dataset-stats.py --tool slic-puppet ../repos/github SLIC-puppet-github.csv .pp
+python3 ../../dump-dataset-stats.py --tool glitch ../repos/github GLITCH-puppet-github.csv .pp
+python3 ../../dump-dataset-stats.py --tool slic-puppet ../repos/mozi SLIC-puppet-mozi.csv .pp
+python3 ../../dump-dataset-stats.py --tool glitch ../repos/mozi GLITCH-puppet-mozi.csv .pp
+python3 ../../dump-dataset-stats.py --tool slic-puppet ../repos/ostk SLIC-puppet-openstack.csv .pp
+python3 ../../dump-dataset-stats.py --tool glitch ../repos/ostk GLITCH-puppet-openstack.csv .pp
+python3 ../../dump-dataset-stats.py --tool slic-puppet ../repos/wiki SLIC-puppet-wikimedia.csv .pp
+python3 ../../dump-dataset-stats.py --tool glitch ../repos/wiki GLITCH-puppet-wikimedia.csv .pp
+```
