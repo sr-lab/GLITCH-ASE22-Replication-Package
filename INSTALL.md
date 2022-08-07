@@ -56,6 +56,8 @@ This section describes how to replicate the experiments of the paper "GLITCH: Au
 
 The folder ``RESULTS`` contains the file ``README.md`` with the same instructions described here. This folder also contains the datasets and the final outputs of our experiments.
 
+Note that in some cases the scripts will show N/D for the precision and 0.0 for the recall, but in the paper we are more specific: we show N/I for not implemented, N/D for no data, or N/A for not applicable.
+
 ### Ansible
 
 #### Oracle Dataset
