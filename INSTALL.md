@@ -75,3 +75,20 @@ python3 calculate-metrics.py SLAC-ansible-oracle.csv
 python3 calculate-metrics.py GLITCH-SLAC-ansible-oracle.csv
 python3 calculate-metrics.py GLITCH-ansible-oracle.csv
 ```
+
+#### IaC Dataset
+
+To obtain the results of occurrences, smell density and proportion of scripts for the Ansible IaC dataset (Table 10, 11 and 12), run the following commands (**NOTE:** the execution will take a while &ndash; ~40 minutes in our experiments):
+
+```
+cd /RESULTS/ansible/iac-dataset-analysis
+./results.sh
+```
+
+The output obtained by running SLAC and GLITCH on the IaC dataset is already provided on the folder `ansible/iac-dataset-analysis`. If you only want to check the final results run the following commands:
+
+```
+cd /RESULTS/ansible/iac-dataset-analysis
+python3 ../../dump-dataset-stats.py --tool slac-ansible ../repos SLAC-ansible.csv .yaml,.yml
+python3 ../../dump-dataset-stats.py --tool glitch ../repos GLITCH-ansible.csv .yaml,.yml
+```
