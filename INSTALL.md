@@ -64,7 +64,7 @@ To obtain the results of precision and recall for the Ansible oracle dataset (Ta
 
 ```
 cd /RESULTS/ansible/oracle-dataset-analysis
-./oracle-results.sh
+./oracle_results.sh
 ```
 
 The output obtained by running SLAC and both configurations of GLITCH on the oracle dataset is already provided on the folder `ansible/oracle-dataset-analysis`. If you only want to check the final results run the following commands:
@@ -101,7 +101,7 @@ To obtain the results of precision and recall for the Chef oracle dataset (Table
 
 ```
 cd /RESULTS/chef/oracle-dataset-analysis
-./oracle-results.sh
+./oracle_results.sh
 ```
 
 The output obtained by running SLAC and both configurations of GLITCH on the oracle dataset is already provided on the folder `chef/oracle-dataset-analysis`. If you only want to check the final results run the following commands:
@@ -139,7 +139,7 @@ To obtain the results of precision and recall for the Puppet oracle dataset (Tab
 
 ```
 cd /RESULTS/puppet/oracle-dataset-analysis
-./oracle-results.sh
+./oracle_results.sh
 ```
 
 The output obtained by running SLIC and both configurations of GLITCH on the oracle dataset is already provided on the folder `puppet/oracle-dataset-analysis`. If you only want to check the final results run the following commands:
