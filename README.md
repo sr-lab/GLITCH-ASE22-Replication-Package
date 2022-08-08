@@ -11,7 +11,7 @@ The artifact includes the datasets for Ansible, Chef and Puppet containing 196,7
 
 To obtain the replication package you should download it by accessing the link: https://figshare.com/s/d5283b1cdd1bcee38d85
 
-When the download is concluded, you should have the file `glitch-latest.tar` (1.56GB, SHA1 ec21670e6e31cd6fd8c44de4b9a3f1bea398e79c).
+When the download is concluded, you should have the file `glitch-latest.tar` (1.69GB, SHA1 32d010ec89b756c44be77057ce51a063779850b8).
 
 The downloaded tar file is a **Docker image** that should be loaded with Docker to be used. To obtain more instructions on how to install and use the replication package please read the [INSTALL.md](INSTALL.md) file.
 
