@@ -1,5 +1,5 @@
 # Replication Package - Automated Polyglot Security Smell Detection in Infrastructure as Code (ASE 2022)
-
+<a href="https://zenodo.org/badge/latestdoi/519852458"><img src="https://zenodo.org/badge/519852458.svg" alt="DOI"></a>
 
 This repository describes how to obtain and use the replication package for the paper "GLITCH: Automated Polyglot Security Smell Detection in Infrastructure as Code", accepted at ASE 2022.[^1]
 
