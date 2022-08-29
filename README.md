@@ -1,6 +1,6 @@
 # Replication Package - Automated Polyglot Security Smell Detection in Infrastructure as Code (ASE 2022)
 
-This repository describes how to obtain and use the replication package for the paper "GLITCH: Automated Polyglot Security Smell Detection in Infrastructure as Code", accepted at ASE 2022.[^1]
+This repository describes how to obtain and use the replication package for the paper "GLITCH: Automated Polyglot Security Smell Detection in Infrastructure as Code", accepted at ASE 2022.
 
 ## What is the artifact?
 
@@ -9,10 +9,8 @@ The artifact includes the datasets for Ansible, Chef and Puppet containing 196,7
 ## Download
 
 To obtain the replication package you should download it by accessing the link: 
-https://doi.org/10.6084/m9.figshare.19726603.v1
+https://doi.org/10.6084/m9.figshare.19726603.v2
 
-When the download is concluded, you should have the file `glitch-latest.tar` (1.69GB, SHA1 32d010ec89b756c44be77057ce51a063779850b8).
+When the download is concluded, you should have the file `glitch-latest.tar` (1.7GB, SHA1 3d97ad9c3e39feb42a0ba065049aba907002b185, MD5 d9de60550dc558ad227ab14ceef64654).
 
 The downloaded tar file is a **Docker image** that should be loaded with Docker to be used. To obtain more instructions on how to install and use the replication package please read the [INSTALL.md](INSTALL.md) file.
-
-[^1]: Please note that the original title of this paper (as submitted to ASE) was "GLITCH: an Intermediate-Representation-Based Security Analysis for Infrastructure as Code Scripts". Following the reviewers' suggestion, we changed the title to better match our contributions.
