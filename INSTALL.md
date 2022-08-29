@@ -158,7 +158,7 @@ python3 calculate-metrics.py GLITCH-puppet-oracle.csv
 To obtain the results of occurrences, smell density and proportion of scripts for the Puppet IaC dataset (Table 10, 11 and 12), run the following commands (**NOTE:** in our experiments the execution took ~45 minutes for Github, ~6 minutes for Mozilla, ~16 minutes for Openstack, and ~15 minutes for Wikimedia):
 
 ```
-cd /RESULTS/chef/iac-dataset-analysis
+cd /RESULTS/puppet/iac-dataset-analysis
 ./github_results.sh
 ./mozi_results.sh
 ./openstack_results.sh
